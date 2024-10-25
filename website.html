@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #004d99;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #004d99;
+        }
+
+        footer {
+            background-color: #004d99;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .courses {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .course {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 30%;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .course h3 {
+            color: #333;
+        }
+
+        .contact-form {
+            text-align: left;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #004d99;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #003366;
+        }
+
+        #img1 {
+            font-size: 50px;
+            color: blue;
+        }
+
+        .about1 {
+            width: 80vw;
+            margin-left: 100px;
+        }
+       
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1> <img src="image1.png" alt="kiet img" width="70px" height="40px">
+            KIET Group of Institutions</h1>
+        <p>Krishna Institute of Engineering and Technology</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <section id="home">
+        <marquee direction="left" id="img1" behavior="scroll" scrollamount="20"> Welcome to KIET </marquee>
+        <img src="https://www.kiet.edu/uploads/banner_image/980797313.jpg" width="1200px" height="800px">
+        <p>KIET Group of Institutions, a premier engineering college, fosters academic excellence, research, and
+            innovation. With state-of-the-art infrastructure and industry-aligned courses, KIET prepares students for
+            global challenges.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <h3>Overview</h3>
+        <div class="about1">
+            <p>KIET Group of Institutions is recognized as one of the best engineering colleges in Delhi-NCR. Founded by
+                the
+                members of Krishna Charitable Society in 1998 with a modest number of 180 students, KIET Group of
+                Institutions has now become a pioneer in the technical education domain with a strength of 7500+
+                students.
+            </p><br>
+            <p>
+                With a rich alumni base of 20000+ students spread in all the nooks and corners of the world, KIET Group
+                of
+                Institutions is moving efficiently towards its vision of shaping young minds with skill-oriented & value
+                based education as these alumni serve the dual purpose of mentoring the present students, as well as
+                opening
+                new doors for them.
+            </p><br>
+            <h2>History of Krishna Charitable Society</h2>
+            <p>All progressive organizations are the outcome of dreams, creative ideas and leadership of certain
+                dedicated people. A few years ago, a group of illustrious edupreneurs from Ghaziabad got together and
+                began the most ambitious programme of philanthropy. They established Krishna Charitable Society, a
+                non-profit making organization, and undertook the bold venture of performing service to society through
+                a non-governmental education system. Under the aegis of this society was born Krishna Institute of
+                Engineering and Technology, KIET is a self-financed institute engaged in imparting technical,
+                pharmaceutical and management education that has the approval of AICTE, is affiliated to Dr A.P.J. Abdul
+                Kalam Technical University, Lucknow, Uttar Pradesh</p>
+        </div>
+    </section>
+
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="courses">
+            <div class="course">
+                <h3>B.Tech in Computer Science & Engineering</h3>
+                <p>Duration: 4 years</p>
+                <p>Learn cutting-edge technologies such as AI, Machine Learning, Data Science, and Cloud Computing.</p>
+            </div>
+            <div class="course">
+                <h3>Master of Computer Application</h3>
+                <p>Duration: 2 years</p>
+                <p>Gain expertise in IT.</p>
+            </div>
+            <div class="course">
+                <h3>MBA - Master of Business Administration</h3>
+                <p>Duration: 2 years</p>
+                <p>Acquire managerial skills and industry insights to become a business leader of tomorrow.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"
+                required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Krishna Institute of Engineering and Technology. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
